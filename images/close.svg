@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>Header</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M14.5857864,16 L7.51471863,8.92893219 L8.92893219,7.51471863 L16,14.5857864 L23.0710678,7.51471863 L24.4852814,8.92893219 L17.4142136,16 L24.4852814,23.0710678 L23.0710678,24.4852814 L16,17.4142136 L8.92893219,24.4852814 L7.51471863,23.0710678 L14.5857864,16 Z" id="path-1"></path>
+    </defs>
+    <g id="Code-Test" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Mobile-Menu" transform="translate(-22.000000, -22.000000)">
+            <g id="Header" transform="translate(15.000000, 15.000000)">
+                <g id="icon/solid/close">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="close" fill="#000000" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    <g id="color/solid/primary" mask="url(#mask-2)" fill="#0E3757" fill-rule="evenodd">
+                        <g transform="translate(-22.000000, -25.000000)" id="color">
+                            <rect x="0" y="0" width="80" height="80"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

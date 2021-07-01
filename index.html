@@ -17,13 +17,30 @@
 </head>
 
 <body>
+  <div class="mobile-right">
+    <img src="images/close.svg" />
+    <ul class="mobile-nav-items">
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">About You</a></li>
+      <li><a href="#">Portfolio</a></li>
+      <li><a href="#" class="contact">Contact</a></li>
+    </ul>
+  </div>
+  <div class="mobile-left">
   <header class="_max-width-elem">
   <a href="https://www.dotcentric.co.uk/" target="_blank"><img class="logo" src="images/primary.svg" /></a>
-  <nav>
+  <nav class="desktop">
     <a href="#">About Us</a>
     <a href="#">About You</a>
     <a href="#">Portfolio</a>
     <a href="#" class="contact">Contact</a>
+  </nav>
+  <nav class="mobile">
+    <div class="delicious-burger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
   </nav>
   </header>
 
@@ -112,7 +129,6 @@
 
 
     </div>
-
   </main>
 
   <!-- Footer -->
@@ -123,5 +139,6 @@
     </div>
   </footer>
   <script src="script.js"></script>
+</div>
 </body>
 </html>
