@@ -1,16 +1,60 @@
- 
-  @media screen and (max-width: 480px) {
-    
-  }
-  
-  /* Wide Mobile Styles */
-  @media screen and (max-width: 768px) {
+body {
+  color: #0E3757;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-  }
+a {
+  color: #0E3757;
+  text-decoration: none;
+}
+
+header {
+ width: 100vw;
+ max-width: 1164px;
+ margin: 0 auto;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+header .logo {
+  width: 120px;
+  height: 50px;
+}
+
+nav {
+  width: auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: calc(100% - 120px);
+}
+
+nav a {
+  width: auto;
+  margin: 0 15px;
+}
+
+nav .contact {
+  background-color: #F56A75;
+  padding: 15px;
+  color: white;
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 480px) {
   
-  /* Tablet Styles */
-  @media screen and (max-width: 1024px) {
-    
-  }
+}
+
+/* Wide Mobile Styles */
+@media screen and (max-width: 768px) {
+
+}
+
+/* Tablet Styles */
+@media screen and (max-width: 1024px) {
+  
+}
   
   
