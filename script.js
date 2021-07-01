@@ -15,12 +15,29 @@
   buildContent = function(data) {
     console.dir(data.services);
     data.services.forEach(element => {
-      console.log(element);
+      console.log('Services', element);
     });
 
     let servicesElements = document.querySelectorAll('.services li');
     servicesElements.forEach(element => {
       console.log('Services Wrappers: ', element);
+      console.dir(element)
+      if (element.classList.contains('first')) {
+        console.log(element, data.services[0].image);
+        element.firstElementChild.setAttribute('src', data.services[0].image );
+        element.childNodes[3].innerText = data.services[0].name;
+        element.childNodes[5].innerText = data.services[0].description;
+      } else if (element.classList.contains('second')) {
+        console.log(element, data.services[1].image);
+        element.firstElementChild.setAttribute('src', data.services[1].image );
+        element.childNodes[3].innerText = data.services[1].name;
+        element.childNodes[5].innerText = data.services[1].description;
+      } else if (element.classList.contains('third')) {
+        console.log(element, data.services[2].image);
+        element.firstElementChild.setAttribute('src', data.services[2].image );
+        element.childNodes[3].innerText = data.services[2].name;
+        element.childNodes[5].innerText = data.services[2].description;
+      }
     });
   }
 
