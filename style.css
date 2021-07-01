@@ -2,6 +2,7 @@ body {
   color: #0E3757;
   font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
 }
 
 a {
@@ -18,7 +19,7 @@ header {
  align-items: center;
 }
 
-header .logo {
+.logo {
   width: 120px;
   height: 50px;
 }
@@ -40,6 +41,26 @@ nav .contact {
   background-color: #F56A75;
   padding: 15px;
   color: white;
+}
+
+footer {
+  width: 100vw;
+  background-color: #0E3757;
+  color: white;
+}
+
+footer .inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  margin: 0 auto;
+  width: 80%;
+  max-width: 1164px;
+}
+
+footer a {
+  color: #F56A75;
 }
 
 /* Mobile Styles */
