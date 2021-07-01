@@ -5,9 +5,11 @@ body {
   margin: 0;
 }
 
+/* Shared Elements */
 a {
-  color: #0E3757;
+  color: #F56A75;
   text-decoration: none;
+  cursor: pointer;
 }
 
 p {
@@ -20,8 +22,26 @@ h2 {
   font-size: 50px;
   text-align: center;
   line-height: 64px;
+  font-weight: normal;
+  margin-bottom: 15px;
 }
 
+h3 {
+  font-family: Helvetica;
+  font-size: 28px;
+  text-align: center;
+  color: #0E3757;
+  line-height: 42px;
+  margin-bottom: 5px;
+  font-weight: normal;
+}
+
+.contact {
+  padding: 15px;
+  color: white;
+}
+
+/* Layout based elements */
 ._full-width-elem {
   width: 100vw;
 }
@@ -34,12 +54,21 @@ h2 {
   max-width: 754px;
 }
 
+.inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  width: 80%;
+}
+
+/* Header */
 header {
- width: 100vw;
- margin: 0 auto;
- display: flex;
- justify-content: center;
- align-items: center;
+  width: 100vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .logo {
@@ -58,6 +87,7 @@ nav {
 nav a {
   width: auto;
   margin: 0 15px;
+  color: #0E3757;
 }
 
 nav .contact {
@@ -66,24 +96,21 @@ nav .contact {
   color: white;
 }
 
+/* Footer */
 footer {
   background-color: #0E3757;
   color: white;
 }
 
 footer .inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   height: 100px;
-  margin: 0 auto;
-  width: 80%;
 }
 
 footer a {
   color: #F56A75;
 }
 
+/* Body */
 main {
   display: flex;
   flex-direction: column;
@@ -91,9 +118,10 @@ main {
   align-items: center;
 }
 
+/* Messaging */
 main h2 {
   margin-top: 50px;
-  margin-bottom: 0;
+  margin-bottom: 15px;
 }
 
 main p {
@@ -101,8 +129,161 @@ main p {
   margin-top: 0;
   margin-bottom: 50px;
 }
+/* CTA */
+main .cta {
+  background-color: #F56A75;
+  padding: 20px 0;
+}
 
-/* Mobile Styles */
+main .cta .inner {
+}
+
+main .cta .inner p {
+  color: white;
+  font-size: 28px;
+  margin: 0;
+}
+
+main .cta .inner .contact {
+  color: white;
+  background-color: #0E3757;
+  padding: 15px 30px;
+}
+
+/* Dynamic Content / Services */
+ul.services {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+ul.services li {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+ul.services li img {
+  width: 150px;
+  height: 150px;
+}
+
+ul.services li p {
+  font-size: 20px;
+  color: #8D9CA8;
+  text-align: center;
+  line-height: 30px;
+}
+
+/* Quote */
+main .quote {
+  border-top: 1px solid #EEE;
+  border-bottom: 1px solid #EEE;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding: 30px 0;
+}
+
+main .quote p {
+  margin: 0;
+  text-align: left;
+  position: relative;
+  padding-left: 100px;
+}
+
+main .quote p:first-of-type {
+  color: #0E3757;
+}
+
+main .quote p:first-of-type::before {
+  width: 50px;
+  height: 33px;
+  display: block;
+  content: ' ';
+  background-image: url('images/speach-marks.svg');
+  background-size: 50px 33px;
+  position: absolute;
+  left: 20px;
+  top: 10px;
+}
+
+main .quote p.author {
+  font-size: 18px;
+  color: #8D9CA8;
+}
+
+/* Form */
+
+form, form section, form section p {
+  display: flex;
+  flex-direction: column;
+}
+
+form section p {
+  text-align: left;
+  color: #0E3757;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+form section p span.helper {
+ color: #8D9CA8;
+ font-size: 14px;
+}
+
+form section p .error {
+  font-size: 14px;
+  color: #D0021B;
+}
+
+form section input, form section textarea {
+  color: #0E3757;
+  border: 2px solid #DADADA;
+  outline: none;
+  padding: 12px;
+  border-radius: 5px;
+  transition: all 0.4s;
+}
+
+form section input:focus, form section textarea:focus {
+  border-color: #0E3757;
+}
+
+form section textarea { 
+  position: relative;
+  height: 170px;
+}
+
+form section textarea::placeholder {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+}
+
+form section input::placeholder, form section textarea::placeholder {
+  font-family: Helvetica;
+  font-size: 16px;
+  color: #9B9B9B;
+}
+
+form section:last-of-type p {
+  align-items: flex-end;
+}
+
+form section .contact {
+  background-color: #0E3757;
+  padding: 15px 30px;
+  width: 120px;
+  float: right;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
 @media screen and (max-width: 480px) {
   
 }
@@ -114,7 +295,10 @@ main p {
 
 /* Tablet Styles */
 @media screen and (max-width: 1024px) {
-  
+  ul.services {
+    display: flex;
+    flex-direction: column;
+  }
 }
   
   
