@@ -4,6 +4,10 @@ body {
   font-family: Helvetica;
   margin: 0;
 }
+/* Not needed on Desktop */
+.mobile-right {
+  display: none;
+}
 
 /* Shared Elements */
 a {
@@ -164,8 +168,8 @@ main .cta .inner .contact {
 ul.services {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 ul.services li {
@@ -173,6 +177,7 @@ ul.services li {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  width: 300px;
 }
 
 ul.services li img {
