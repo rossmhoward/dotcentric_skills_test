@@ -15,13 +15,13 @@ a {
 p {
   font-size: 24px;
   text-align: center;
-  line-height: 36px;
+  line-height: 1.5;
 }
 
 h2 {
   font-size: 50px;
   text-align: center;
-  line-height: 64px;
+  line-height: 1.5;
   font-weight: normal;
   margin-bottom: 15px;
 }
@@ -31,7 +31,7 @@ h3 {
   font-size: 28px;
   text-align: center;
   color: #0E3757;
-  line-height: 42px;
+  line-height: 1.5;
   margin-bottom: 5px;
   font-weight: normal;
 }
@@ -129,6 +129,11 @@ main p {
   margin-top: 0;
   margin-bottom: 50px;
 }
+
+main .hero {
+  width: 80%;
+}
+
 /* CTA */
 main .cta {
   background-color: #F56A75;
@@ -174,7 +179,7 @@ ul.services li p {
   font-size: 20px;
   color: #8D9CA8;
   text-align: center;
-  line-height: 30px;
+  line-height: 1.5;
 }
 
 /* Quote */
@@ -238,6 +243,7 @@ form section p span.helper {
 form section p .error {
   font-size: 14px;
   color: #D0021B;
+  opacity: 0;
 }
 
 form section input, form section textarea {
@@ -251,6 +257,22 @@ form section input, form section textarea {
 
 form section input:focus, form section textarea:focus {
   border-color: #0E3757;
+}
+
+form section input#mail:valid {
+  border-color: green;
+}
+
+form section input#mail:invalid {
+  border-color: #D0021B;
+}
+
+form section input#mail:invalid span.error, form section span.error {
+  opacity: 0;
+}
+
+form section input#mail:invalid + span.error {
+ opacity: 1;
 }
 
 form section textarea { 
@@ -284,21 +306,95 @@ form section .contact {
   cursor: pointer;
 }
 
-@media screen and (max-width: 480px) {
-  
-}
-
-/* Wide Mobile Styles */
-@media screen and (max-width: 768px) {
-
-}
-
 /* Tablet Styles */
 @media screen and (max-width: 1024px) {
   ul.services {
     display: flex;
     flex-direction: column;
   }
+  /* main h2 {
+    margin-top: 50px;
+    margin-bottom: 15px;
+  } */
+  h2 {
+    font-size: 30px;
+  }
+  h3 {
+    font-size: 24px;
+    line-height: 1.5;
+  }
+  p {
+    font-size: 20px;
+  }
+  ul.services li p {
+    font-size: 16px;
+  }
+  ul.services {
+    margin: 0;
+    padding: 0;
+  }
+  ul.services li {
+    max-width: 320px;
+  }
+  ._max-width-elem {
+    max-width: none;
+  }
+  ._narrow-width-elem {
+    max-width: 600px;
+    padding: 0;
+  }
+  main .cta .inner {
+    display: flex;
+    flex-direction: column;
+  }
+  main .cta .inner p {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  main .cta .inner a {
+    width: calc(100% - 30px);
+    text-align: center;
+  }
+  .form-wrapper {
+    padding-right: 15px;
+  }
+  footer .inner {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+  }
+  footer .inner p {
+    font-size: 16px;
+    order: 2;
+    margin-top: 30px;
+  }
 }
+
+/* Wide Mobile Styles */
+@media screen and (max-width: 768px) {
+  ._narrow-width-elem {
+    max-width: 320px;
+    padding: 0 15px;
+  }
+  main .quote p {
+    font-size: 20px;
+    padding-left: 60px;
+  }
+  main .quote p:first-of-type::before {
+    width: 30px;
+    height: 20px;
+    display: block;
+    content: ' ';
+    background-image: url('images/speach-marks.svg');
+    background-size: 30px 20px;
+    position: absolute;
+    left: 10px;
+    top: 7px;
+  }
+}
+
+@media screen and (max-width: 480px) {
   
+}
   
